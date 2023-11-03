@@ -16,7 +16,7 @@ RO - ProiectFinal.
 
 Acest proiect doreste sa fie un exercitiu si un model prin care sa se prezinte interactiunea dintre doua adrese de email in care cu datele din primul email este accesat urmatorul email din care sunt verificate anumite fisiere.  
 In principiu acest lucru se poate face in cascada si daca sistemul este gandit corect se poate face accesare din primul email pana la email-ul "n" ("n" mai mare sau egal cu 2).  
-Avand la baza Java, Selenium, TestNG si Maven programul prezinta modul in care se poate accesa si apoi verifica continutul unei adrese de email folosind comanda SOFTASSERT. Pentru a putea rula acest porgram trebuie sa aveti instalat pe computerul dvs. urmatoarele - Java, IntelliJ IDEA, Selenium , TestNG, Maven si driverele de Chrome (chromedriver in acest proiect).
+Avand la baza Java, Selenium, TestNG si Maven programul prezinta modul in care se poate accesa si apoi verifica continutul unei adrese de email folosind comanda SOFTASSERT. Pentru a putea rula acest porgram trebuie sa aveti instalat pe computerul dvs. urmatoarele - Java, IntelliJ IDEA, Selenium , TestNG, Maven si driverele de Chrome (chromedriver in acest proiect).  
 Locatia unde sunt instalate toate acestea propgrame si utilitati se va preciza in pom.xmal si in clasa DriverManager, in linia:  
 System.setProperty("webdriver.chrome.driver", "C:/Users/crist/IdeaProjects/- driver_Selenium-Maven/ChromeDriver/chromedriver.exe");
 unde la adresa "C:/Users/crist/IdeaProjects/- driver_Selenium-Maven/ChromeDriver/chromedriver.exe" se va preciza noua calea spre chromedriver-ul din computerul pe care este rulat programul.  
