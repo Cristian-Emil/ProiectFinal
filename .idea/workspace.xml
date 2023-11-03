@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ad8d9a7-5444-4ad3-8448-b37fab43cbb2" name="Changes" comment="ProiectFinal - varianta cu 10 teste - rev.03.11.2023&#10;Diverse elemente au fost mopdificate pe pagina de Email si a fost necesar sa se schimbe un index sau un cssSelector.">
+    <list default="true" id="6ad8d9a7-5444-4ad3-8448-b37fab43cbb2" name="Changes" comment="ProiectFinal - rev.03.11.2023&#10;Diverse elemente au fost modificate pe pagina de Email si a fost necesara schimbarea unui selector.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginAndCheckData_cu_10teste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginAndCheckData_cu_10teste.java" afterDir="false" />
     </list>
@@ -72,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699035638273</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ProiectFinal - rev.03.11.2023&#10;Diverse elemente au fost modificate pe pagina de Email si a fost necesara schimbarea unui selector.">
+      <created>1699039752623</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699039752623</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,6 +96,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ProiectFinal 25.10.2023 - varianta cu 10 teste" />
     <MESSAGE value="ProiectFinal - varianta cu 10 teste - rev.03.11.2023&#10;Diverse elemente au fost mopdificate pe pagina de Email si a fost necesar sa se schimbe un index sau un cssSelector." />
-    <option name="LAST_COMMIT_MESSAGE" value="ProiectFinal - varianta cu 10 teste - rev.03.11.2023&#10;Diverse elemente au fost mopdificate pe pagina de Email si a fost necesar sa se schimbe un index sau un cssSelector." />
+    <MESSAGE value="ProiectFinal - rev.03.11.2023&#10;Diverse elemente au fost modificate pe pagina de Email si a fost necesara schimbarea unui selector." />
+    <option name="LAST_COMMIT_MESSAGE" value="ProiectFinal - rev.03.11.2023&#10;Diverse elemente au fost modificate pe pagina de Email si a fost necesara schimbarea unui selector." />
   </component>
 </project>

@@ -51,15 +51,15 @@ public class LoginAndCheckData_cu_10teste extends BaseTest{
     public void testLogInAdminVailidCredentiual1() throws InterruptedException {
 
         AccessEmailFromPage accesEmailFromPage1 = PageFactory.initElements(driver, AccessEmailFromPage.class);
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
         AccessEmailFromPage.getSignInButtonPage().click();
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
 // Ne focalizam pe pagina pe care o deschidem, cu ajutorul liniilor de mai jos
 
         String parentWindow = driver.getWindowHandle();
         Set<String> windowHandles = driver.getWindowHandles();
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
         for (String window : windowHandles) {
             if (!window.equals(parentWindow)) {
@@ -76,20 +76,20 @@ public class LoginAndCheckData_cu_10teste extends BaseTest{
 
 
         ChooseAccount chooseAccount = PageFactory.initElements(driver, ChooseAccount.class);
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
         ChooseAccount.getUserName().sendKeys(USERNAME1);
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
         AccessEmailFromPage.getNext().click();
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
         ChooseAccount.getPassword().sendKeys(PASSWORD1);
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
         AccessEmailFromPage.getSignInAccount().click();
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
         ChooseAccount.getNoButton().click();
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
 // --- A aparut pagian de Microsoft 365 si trebuie s-o inchidem
 //        ChooseEmailFromPage.getClickBox().click();
@@ -106,17 +106,17 @@ public class LoginAndCheckData_cu_10teste extends BaseTest{
 //-------------------- se continua pe pagina de Outlook.com pemntru a rula programul -----------------------------------
 
         ChooseEmailFromPage chooseEmailFromPage = PageFactory.initElements(driver, ChooseEmailFromPage.class);
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
 // Ne ducem pe fisierul "Adrese_email" si il accesam pentru a cauta si ajunge la email-ul dorit
 
         ChooseEmailFromPage.getClickAdrese_email().click();
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
 // Facem click pe email-ul dorit si intram in corpul acestuia pentru a vedea si prelua valorile existente
 
         ChooseEmailFromPage.getClickToTheEmail().click();
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
 /*
 Pentru a gasi si apela elementele pe care le dorim o sa folosim urmatoarele comenzi:
@@ -133,10 +133,10 @@ Pentru a gasi si apela elementele pe care le dorim o sa folosim urmatoarele come
 
         WebElement dataPackage1 = driver.findElement(By.cssSelector("#UniqueMessageBody > div > div > div > div:nth-child(3) > div:nth-child(4)"));
 //        WebElement dataPackage1 = driver.findElement(By.xpath("//*[@id=\"UniqueMessageBody\"]/div/div/div/div[3]/div[4]"));
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
         WebElement dataPackage2 = driver.findElement(By.cssSelector("#UniqueMessageBody > div > div > div > div:nth-child(3) > div:nth-child(5)"));
 //        WebElement dataPackage2 = driver.findElement(By.xpath("//*[@id=\"UniqueMessageBody\"]/div/div/div/div[3]/div[5]"));
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
 // Tiparim cele 2 texte/valori copiate ca sa vedem valorile accesate :
         System.out.println(dataPackage1.getText());
@@ -168,24 +168,24 @@ Pentru a gasi si apela elementele pe care le dorim o sa folosim urmatoarele come
 /*  Pt ca sa utilizam acceasi pagina de OUTLOOK se iese de pe pagina si se inchide browserul
     Pentru a iesi din brouse apelam SignOutAccount si inchidem pagina
 */
-        Thread.sleep(2000);
+//        Thread.sleep(2000);
 
         WebElement QuitAccount1 = driver.findElement(By.id("O365_MainLink_Me"));
 //        WebElement QuitAccount = driver.findElement(By.cssSelector("#O365_MainLink_Me"));
 //        WebElement QuitAccount = driver.findElement(By.xpath("//*[@id="O365_MainLink_Me"]"));
         QuitAccount1.click();
-        Thread.sleep(1500);
+//        Thread.sleep(1500);
 
         WebElement SignOutPage1 = driver.findElement(By.id("mectrl_body_signOut"));
 //        WebElement SignOutPage = driver.findElement(By.cssSelector("#mectrl_body_signOut"));
 //        WebElement SignOutPage = driver.findElement(By.xpath("//*[@id=\"mectrl_body_signOut\"]"));
         SignOutPage1.click();
-        Thread.sleep(1500);
+//        Thread.sleep(1500);
 
 //  Apelam functiile close si quit ca sa avem convingerea ca am inchis corectc browserul accesat.
         driver.close();
         driver.quit();
-        Thread.sleep(1500);
+//        Thread.sleep(1500);
 
 //  Pentru verificare ca am apelat valorile care trebuie, tiparim noul username si noua parola:
         System.out.println("Valorile de mai jos se utilizeaza pentru USERNAME si PAROLA cand accesam noul cont");
@@ -201,7 +201,7 @@ Pentru a gasi si apela elementele pe care le dorim o sa folosim urmatoarele come
         AccessEmailFromPage accesEmailFromPage2 = PageFactory.initElements(driver, AccessEmailFromPage.class);
 //        Thread.sleep(1000);
         AccessEmailFromPage.getSignInButtonPage().click();
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
 // Ne focalizam pe noua pagina pe care o deschidem, cum am facut si prima data
 
@@ -217,20 +217,20 @@ Pentru a gasi si apela elementele pe care le dorim o sa folosim urmatoarele come
         }
 
         chooseAccount = PageFactory.initElements(driver, ChooseAccount.class);
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
         ChooseAccount.getUserName().sendKeys(USERNAME2);
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
         AccessEmailFromPage.getNext().click();
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
         ChooseAccount.getPassword().sendKeys(PASSWORD2);
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
         AccessEmailFromPage.getSignInAccount().click();
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
         ChooseAccount.getNoButton().click();
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
 /*
  Pentru diverse verificari utilizam comanda ASSER. In acest caz folosim SoftAssert pentru a nu intrerupe rularea programul
@@ -244,35 +244,35 @@ Pentru a gasi si apela elementele pe care le dorim o sa folosim urmatoarele come
 
         WebElement message1 = driver.findElement(By.cssSelector("#folderPaneDroppableContainer > div.e4_J1 > div > div > div:nth-child(1) > div"));
         softAssert.assertEquals(message1.getText(), "Inbox", "Test 1 - elementul nu exista, test invalid");
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
         WebElement message2 = driver.findElement(By.cssSelector("#folderPaneDroppableContainer > div.e4_J1 > div > div > div:nth-child(3)"));
         softAssert.assertEquals(message2.getText(), "Junk Email", "Test 2 - elementul nu exista, test invalid");
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
         WebElement message3 = driver.findElement(By.cssSelector("#folderPaneDroppableContainer > div.e4_J1 > div > div > div:nth-child(4)"));
         softAssert.assertEquals(message3.getText(), "Drafts", "Test 3 - elementul nu exista, test invalid");
-        Thread.sleep(1000);
+//       Thread.sleep(1000);
 
         WebElement message4 = driver.findElement(By.cssSelector("#folderPaneDroppableContainer > div.e4_J1 > div > div > div:nth-child(5)"));
         softAssert.assertEquals(message4.getText(), "Sent Items", "Test 4 - elementul nu exista, test invalid");
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
         WebElement message5 = driver.findElement(By.cssSelector("#folderPaneDroppableContainer > div.e4_J1 > div > div > div:nth-child(6)"));
         softAssert.assertEquals(message5.getText(), "Deleted Items", "Test 5 - elementul nu exista, test invalid");
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
         WebElement message6 = driver.findElement(By.cssSelector("#folderPaneDroppableContainer > div.e4_J1 > div > div > div:nth-child(7)"));
         softAssert.assertEquals(message6.getText(), "Archive", "Test 6 - elementul nu exista, test invalid");
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
         WebElement message7 = driver.findElement(By.cssSelector("#folderPaneDroppableContainer > div.e4_J1 > div > div > div:nth-child(8)"));
         softAssert.assertEquals(message7.getText(), "Archive", "Test 7 - elementul nu exista, test invalid");
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
         WebElement message8 = driver.findElement(By.cssSelector("#folderPaneDroppableContainer > div.e4_J1 > div > div > div:nth-child(9)"));
         softAssert.assertEquals(message8.getText(), "ConversationHistory", "Test 8 - elementul nu exista, test invalid");
-        Thread.sleep(1500);
+//        Thread.sleep(1500);
 
 
 //Am separat partea de afisare la consola (au fost scoase in afara liniilor ASSERT ) ca sa vizualizam mai bine modul de lucru:
@@ -307,15 +307,15 @@ Pentru a gasi si apela elementele pe care le dorim o sa folosim urmatoarele come
 
 // Punem un sleep pentru a lasa programul sa ruleze complet dupa care se inchide si iesim din browser
 
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
         WebElement QuitAccount2 = driver.findElement(By.xpath("//*[@id=\"O365_MainLink_Me\"]"));
         QuitAccount2.click();
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
         WebElement SignOutPage2 = driver.findElement(By.xpath("//*[@id=\"mectrl_body_signOut\"]"));
         SignOutPage2.click();
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
 
 /*
 Tiparim/afisam rezultatele testului pe care le obțineți din variabilele selectate
