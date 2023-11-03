@@ -1,4 +1,5 @@
 EN - ProiectFinal
+
 This project wants to be an exercise and a model through which to present the interaction between two email addresses in which the data from the first email is used to access the next email where certain of its files are verified.  
 Of principle, this can be done in cascade, and if the system is thought out correctly, access can be made from the first email to email number "n" (n>= 2).  
 Based on Java, Selenium, TestNG and Maven, the program shows how to access and how to check the content of an email address using the SOFTASSERT command. In order to run this program, you must have installed on your computer  Java, IntelliJ IDEA, Selenium, TestNG, Maven and the Chrome (in this project is chromedriver).  
