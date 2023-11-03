@@ -86,7 +86,7 @@ public class LoginAndCheckData_cu_10teste extends BaseTest{
         ChooseAccount.getPassword().sendKeys(PASSWORD1);
         Thread.sleep(1000);
         AccessEmailFromPage.getSignInAccount().click();
-        Thread.sleep(1500);
+        Thread.sleep(1000);
 
         ChooseAccount.getNoButton().click();
         Thread.sleep(1000);
@@ -106,17 +106,17 @@ public class LoginAndCheckData_cu_10teste extends BaseTest{
 //-------------------- se continua pe pagina de Outlook.com pemntru a rula programul -----------------------------------
 
         ChooseEmailFromPage chooseEmailFromPage = PageFactory.initElements(driver, ChooseEmailFromPage.class);
-        Thread.sleep(1500);
+        Thread.sleep(1000);
 
 // Ne ducem pe fisierul "Adrese_email" si il accesam pentru a cauta si ajunge la email-ul dorit
 
         ChooseEmailFromPage.getClickAdrese_email().click();
-        Thread.sleep(1500);
+        Thread.sleep(1000);
 
 // Facem click pe email-ul dorit si intram in corpul acestuia pentru a vedea si prelua valorile existente
 
         ChooseEmailFromPage.getClickToTheEmail().click();
-        Thread.sleep(1500);
+        Thread.sleep(1000);
 
 /*
 Pentru a gasi si apela elementele pe care le dorim o sa folosim urmatoarele comenzi:
@@ -242,7 +242,7 @@ Pentru a gasi si apela elementele pe care le dorim o sa folosim urmatoarele come
 
         SoftAssert softAssert = new SoftAssert();
 
-        WebElement message1 = driver.findElement(By.cssSelector("#folderPaneDroppableContainer > div.e4_J1 > div > div > div:nth-child(2)"));
+        WebElement message1 = driver.findElement(By.cssSelector("#folderPaneDroppableContainer > div.e4_J1 > div > div > div:nth-child(1) > div"));
         softAssert.assertEquals(message1.getText(), "Inbox", "Test 1 - elementul nu exista, test invalid");
         Thread.sleep(1000);
 
