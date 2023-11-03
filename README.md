@@ -9,7 +9,7 @@ where at the address "C:/Users/crist/IdeaProjects/- driver_Selenium-Maven/Chrome
 In pom.xml, will be specified modules for Selenium, TestNG and Maven.
 
 ATTENTION: Inside the program have been inserted several lines of Thread.sleep. These have the role of reducing the execution speed of the program if it is used in the didactic purpose.
-In the existing repository, these lines have been commented. In order to have an effect, they must be uncommented, those signs "//" in front of the command line must be deleted (where exist Thread sleep).
+In the existing repository, these lines have been commented. In order to have an effect, they must be uncommented, those signs "//" in front of the command line must be deleted (where exist Thread.sleep).
 
   
 RO - ProiectFinal.  
@@ -23,5 +23,5 @@ unde la adresa "C:/Users/crist/IdeaProjects/- driver_Selenium-Maven/ChromeDriver
 In pom.xml se vor preciza modurile de apelare ale Selenium, TestNG si Maven.
   
 ATENTIE: In cadrul programului au fost inserate mai multe linii de Thread.sleep. Acestea au rolul de a reduce viteza de executie a programului in cazul in care acesta este folosit in scop didactic.
-In repository-ul existent aceste linii au fost comentate. Pentru a avea efect acestea trebuie decomentate , adica trebuie sa stergem semnele  "//" din fata liniei de comanda ( ce contine Thread sleep ). 
+In repository-ul existent aceste linii au fost comentate. Pentru a avea efect acestea trebuie decomentate , adica trebuie sa stergem semnele  "//" din fata liniei de comanda ( ce contine Thread.sleep ). 
 
